@@ -8,12 +8,14 @@ h1, h2, h3, h4, h5, h6, p, ul {
     list-style-type: none;
 }
 .container{
-    width: 1600px;
+    width: 1200px;
+    margin:0 auto;
 }
 
 body {
     font-family: 'Roboto', sans-serif; 
     color:#212121;
+    width: 1600px;
 }
 
 .secondary-font {
@@ -68,13 +70,17 @@ button{
     font-weight: 700;
     line-height: 1.875;
     padding: 10px 41px 10px 42px;
-
+    margin: 30px 500px 200px 500px;
 }
 
 
-.navigation li{
+.navigation {
     font-weight: 500;
     font-size 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 25px 0;
 }
 .font-size-webstudio{
     font-size: 26px;
@@ -107,11 +113,16 @@ h1{
     font-size: 44px;
     font-weight: 900;
     color:var(--white-tekst);
+    padding: 200px 252px 0 252px;
+    text-align: center;
+    line-height: 1.3636;
 }
 
 h2{
     font-weight: 700;
     font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
 }
 
 
@@ -148,28 +159,36 @@ h4{
     display: flex;
 }
 
-.web-pad{
-    padding: 24px 0 25px 215px;
-}
-.agencja-pad{
-    padding: 32px 0 32px 93px;
-}
-.portfolio-kontakt-pad{
-    padding: 32px 0 32px 46px;
-}
-.mail-pad{
-    padding: 32px 0 32px 364px;
-}
-.tel-pad{
-    padding: 32px 0 32px 50px;
-}
-.efektywne{
-    text-align: center;
-    padding: 200px 452px 0 452px;
-}
-.button-pad{
-    padding: 40px 700px 200px 700px;
-}
 header{
     border-bottom: 1px solid var(--header-border);
+}
+
+.nav-manu-first{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+.nav-manu-second{
+    display: flex;
+    justify-content: flex-end;
+}
+.agencja-pad{
+padding-left: 93px;
+}
+.portfolio-kontakt-pad{
+    padding-left:46px;
+}
+.mail-pad{
+    padding-right: 50px;
+}
+
+.section{
+    padding: 94px 0 94px 0;
+}
+.lorem-pad-bot{
+    padding-bottom: 94px;
+}
+
+.item-second{
+    justify-content: space-around;
 }
