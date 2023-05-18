@@ -10,16 +10,13 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .container{
     width: 1200px;
     margin:0 auto;
+    
 }
 
 body {
     font-family: 'Roboto', sans-serif; 
     color:#212121;
     width: 1600px;
-}
-
-.secondary-font {
-    font-family: 'Raleway', sans-serif;
 }
 
 :root {
@@ -29,9 +26,17 @@ body {
     --background-dark:#2F303A;
     --background-light:#F5F4FA;
     --header-border:#ECECEC;
+    --img-shadow-first: #0000001F;
+    --img-shadow-second: #00000024;
+    --img-shadow-third: #00000033;
+    
 
 }
+.webstudio-style{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
 
+}
 .web-color {
     color: var(--brand-color-blue);
 }
@@ -82,19 +87,27 @@ button{
     justify-content: space-between;
     padding: 24px 0 25px 0;
 }
-.font-size-webstudio{
-    font-size: 26px;
-}
+
 .contact-navi{
 font-weight: 500;
 font-size: 14px;
 color: var(--brand-color-grey);
 }
 
-.contact-footer li{
+.contact-footer{
+    padding: 60px 0px 60px 15px;
+}
+
+.contact-footer :not(:first-child){
     font-size: 14px;
     line-height: 1.7;
+    padding-bottom: 9px;
 }
+.contact-footer :nth-child(1){
+    padding-bottom: 20px;
+}
+
+
 .transparent-text{
     opacity: 0.6;
 }
@@ -115,7 +128,9 @@ h1{
     color:var(--white-tekst);
     padding: 200px 252px 0 252px;
     text-align: center;
-    line-height: 1.3636;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 h2{
@@ -125,21 +140,11 @@ h2{
     padding-bottom: 50px;
 }
 
-
 h3{
     font-size: 14px;
     font-weight: 700;
 }
 
-
-.second-section-description{
-    font-size: 14px;
-    line-height: 1.7;
-
-}
-.third-section ul{
-    font-size: 16px
-}
 h4{
     font-weight: 500;
     padding: 30px 0 10px 0;
@@ -167,11 +172,13 @@ header{
 .nav-manu-first{
     display: flex;
     align-items: center;
-    justify-content: flex-start
+    justify-content: flex-start;
+    padding-left: 15px;
 }
 .nav-manu-second{
     display: flex;
     justify-content: flex-end;
+    padding-right: 27px;
 }
 .agencja-pad{
 padding-left: 93px;
@@ -186,17 +193,33 @@ padding-left: 93px;
 .section{
     padding: 94px 0 94px 0;
 }
-.lorem-pad-bot{
+.lorem-list{
     display: flex;
     padding-bottom: 94px;
+    justify-content: space-around;
 }
+.lorem-list p{
+    width: 270px;
+    line-height: 1.71 ;
+    padding-top: 10px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--brand-color-grey);
+    }
 
-.item-second{
+.img-display{
     display: flex;
     justify-content: space-around;
 }
-
-
-ul[class="item-second"]>li{
+ul[class="img-display"]>li{
     text-align: center;
+    background-color: var(--white-tekst);
+}
+
+.style-position{
+    padding-bottom: 30px;
+}
+.img-shadow{
+    box-shadow: 0px 1px 3px var(--img-shadow-first), 0px 1px 1px var(--img-shadow-second), 0px 2px 1px var(--img-shadow-third);
+border-radius: 0px 0px 4px 4px;
 }
